@@ -5,6 +5,7 @@ import { isNil, isObject } from '@nestjs/common/utils/shared.utils';
 import { RouterMethodFactory } from '../helpers/router-method-factory';
 import * as Router from "router"
 import * as queryString from 'query-string'
+import * as root from 'window-or-global'
 
 export class BrowserAdapter implements HttpServer {
   private readonly routerMethodFactory = new RouterMethodFactory();
@@ -64,10 +65,10 @@ export class BrowserAdapter implements HttpServer {
   listen(port: string | number, hostname: string, callback?: () => void);
   listen(port: any, hostname?: any, callback?: any) {
     const req = {
-      params: queryString.parseUrl(window.location.href).query,
-      url: window.location.href,
+      params: queryString.parseUrl(root.location.href).query,
+      url: root.location.href,
       method: 'GET',
-      location: window.location,
+      location: root.location,
     }
     return this._router(req, {}, (error) => error ? console.error(error): null)
   }
