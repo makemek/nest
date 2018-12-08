@@ -64,13 +64,36 @@ export class BrowserAdapter implements HttpServer {
   listen(port: string | number, callback?: () => void);
   listen(port: string | number, hostname: string, callback?: () => void);
   listen(port: any, hostname?: any, callback?: any) {
-    const req = {
-      params: queryString.parseUrl(root.location.href).query,
-      url: root.location.href,
-      method: 'GET',
-      location: root.location,
+    let window: any
+    if(!process['browser']) {
+      window = {
+        history: {
+          push: () => {},
+          pushState: () => {},
+        },
+        location: {
+          href: '/'
+        }
+      }
     }
-    return this._router(req, {}, (error) => error ? console.error(error): null)
+    else {
+      window = root
+    }
+    this.handleUrlChange(window.location.href)
+
+    const pushState = window.history.pushState
+    window.history.pushState = () => {
+      pushState.apply(window.history, arguments)
+      this.handleUrlChange(window.location.href)
+    }
+  }
+  handleUrlChange(url = '/') {
+    const req = {
+      query: queryString.parseUrl(url).query,
+      url,
+      method: 'GET',
+    }
+    this._router(req, {}, error => error ? console.error(error): null)
   }
 
   reply(response, body: any, statusCode: number) {
