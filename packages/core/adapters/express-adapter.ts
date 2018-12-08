@@ -2,7 +2,6 @@ import { RequestMethod } from '@nestjs/common';
 import { HttpServer, RequestHandler } from '@nestjs/common/interfaces';
 import { ServeStaticOptions } from '@nestjs/common/interfaces/external/serve-static-options.interface';
 import { isNil, isObject } from '@nestjs/common/utils/shared.utils';
-import * as express from 'express';
 import { RouterMethodFactory } from '../helpers/router-method-factory';
 
 export class ExpressAdapter implements HttpServer {
@@ -120,10 +119,7 @@ export class ExpressAdapter implements HttpServer {
   }
 
   useStaticAssets(path: string, options: ServeStaticOptions) {
-    if (options && options.prefix) {
-      return this.use(options.prefix, express.static(path, options));
-    }
-    return this.use(express.static(path, options));
+    return this
   }
 
   setBaseViewsDir(path: string) {
