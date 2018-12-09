@@ -13,8 +13,8 @@
     "socket.io": "^2.1.1"
   },
   "peerDependencies": {
-    "@nestjs/common": "^5.0.0",
-    "@nestjs/core": "^5.0.0",
+    "@nestjs-client/common": "^5.0.0",
+    "@nestjs-client/core": "^5.0.0",
     "rxjs": "^6.0.0"
   },
   "publishConfig": {
