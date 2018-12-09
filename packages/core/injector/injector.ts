@@ -4,16 +4,16 @@ import {
   PARAMTYPES_METADATA,
   PROPERTY_DEPS_METADATA,
   SELF_DECLARED_DEPS_METADATA,
-} from '@nestjs/common/constants';
-import { Controller } from '@nestjs/common/interfaces/controllers/controller.interface';
-import { Injectable } from '@nestjs/common/interfaces/injectable.interface';
-import { Type } from '@nestjs/common/interfaces/type.interface';
+} from '@nestjs-client/common/constants';
+import { Controller } from '@nestjs-client/common/interfaces/controllers/controller.interface';
+import { Injectable } from '@nestjs-client/common/interfaces/injectable.interface';
+import { Type } from '@nestjs-client/common/interfaces/type.interface';
 import {
   isFunction,
   isNil,
   isObject,
   isUndefined,
-} from '@nestjs/common/utils/shared.utils';
+} from '@nestjs-client/common/utils/shared.utils';
 import { RuntimeException } from '../errors/exceptions/runtime.exception';
 import { UndefinedDependencyException } from '../errors/exceptions/undefined-dependency.exception';
 import { UnknownDependenciesException } from '../errors/exceptions/unknown-dependencies.exception';

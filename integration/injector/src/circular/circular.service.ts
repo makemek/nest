@@ -1,4 +1,4 @@
-import { Injectable, forwardRef, Inject } from '@nestjs/common';
+import { Injectable, forwardRef, Inject } from '@nestjs-client/common';
 import { InputService } from './input.service';
 
 @Injectable()

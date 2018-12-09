@@ -1,7 +1,7 @@
-import { ForbiddenException, ParamData } from '@nestjs/common';
-import { CUSTOM_ROUTE_AGRS_METADATA } from '@nestjs/common/constants';
-import { Controller, Transform } from '@nestjs/common/interfaces';
-import { isFunction, isUndefined } from '@nestjs/common/utils/shared.utils';
+import { ForbiddenException, ParamData } from '@nestjs-client/common';
+import { CUSTOM_ROUTE_AGRS_METADATA } from '@nestjs-client/common/constants';
+import { Controller, Transform } from '@nestjs-client/common/interfaces';
+import { isFunction, isUndefined } from '@nestjs-client/common/utils/shared.utils';
 import { FORBIDDEN_MESSAGE } from '../guards/constants';
 import { GuardsConsumer } from '../guards/guards-consumer';
 import { GuardsContextCreator } from '../guards/guards-context-creator';

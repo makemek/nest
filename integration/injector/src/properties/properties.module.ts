@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Module } from '@nestjs-client/common';
 import { DependencyService } from './dependency.service';
 import { PropertiesService } from './properties.service';
 

@@ -3,16 +3,16 @@ import {
   DynamicModule,
   Injectable,
   NestModule,
-} from '@nestjs/common/interfaces';
-import { Type } from '@nestjs/common/interfaces/type.interface';
-import { randomStringGenerator } from '@nestjs/common/utils/random-string-generator.util';
+} from '@nestjs-client/common/interfaces';
+import { Type } from '@nestjs-client/common/interfaces/type.interface';
+import { randomStringGenerator } from '@nestjs-client/common/utils/random-string-generator.util';
 import {
   isFunction,
   isNil,
   isString,
   isSymbol,
   isUndefined,
-} from '@nestjs/common/utils/shared.utils';
+} from '@nestjs-client/common/utils/shared.utils';
 import { InvalidClassException } from '../errors/exceptions/invalid-class.exception';
 import { RuntimeException } from '../errors/exceptions/runtime.exception';
 import { UnknownExportException } from '../errors/exceptions/unknown-export.exception';

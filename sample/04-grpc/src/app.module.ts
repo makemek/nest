@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Module } from '@nestjs-client/common';
 import { HeroModule } from './hero/hero.module';
 
 @Module({

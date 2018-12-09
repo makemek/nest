@@ -1,5 +1,5 @@
-import { CUSTOM_ROUTE_AGRS_METADATA } from '@nestjs/common/constants';
-import { RouteParamtypes } from '@nestjs/common/enums/route-paramtypes.enum';
+import { CUSTOM_ROUTE_AGRS_METADATA } from '@nestjs-client/common/constants';
+import { RouteParamtypes } from '@nestjs-client/common/enums/route-paramtypes.enum';
 import { expect } from 'chai';
 import { of } from 'rxjs';
 import * as sinon from 'sinon';

@@ -1,8 +1,8 @@
 import * as request from 'supertest';
-import { Test } from '@nestjs/testing';
-import { INestApplication, Injectable } from '@nestjs/common';
+import { Test } from '@nestjs-client/testing';
+import { INestApplication, Injectable } from '@nestjs-client/common';
 import { ApplicationModule } from '../src/app.module';
-import { APP_INTERCEPTOR } from '@nestjs/core';
+import { APP_INTERCEPTOR } from '@nestjs-client/core';
 import { of } from 'rxjs';
 import { map } from 'rxjs/operators';
 

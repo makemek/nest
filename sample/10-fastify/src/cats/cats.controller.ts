@@ -6,7 +6,7 @@ import {
   UseGuards,
   UseInterceptors,
   Param,
-} from '@nestjs/common';
+} from '@nestjs-client/common';
 import { CreateCatDto } from './dto/create-cat.dto';
 import { CatsService } from './cats.service';
 import { Cat } from './interfaces/cat.interface';

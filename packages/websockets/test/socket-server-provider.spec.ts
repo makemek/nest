@@ -2,8 +2,8 @@ import * as sinon from 'sinon';
 import { expect } from 'chai';
 import { SocketServerProvider } from '../socket-server-provider';
 import { SocketsContainer } from '../container';
-import { ApplicationConfig } from '@nestjs/core/application-config';
-import { IoAdapter } from '@nestjs/websockets/adapters/io-adapter';
+import { ApplicationConfig } from '@nestjs-client/core/application-config';
+import { IoAdapter } from '@nestjs-client/websockets/adapters/io-adapter';
 
 describe('SocketServerProvider', () => {
   let instance: SocketServerProvider;

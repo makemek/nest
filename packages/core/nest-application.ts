@@ -6,21 +6,21 @@ import {
   NestInterceptor,
   PipeTransform,
   WebSocketAdapter,
-} from '@nestjs/common';
-import { HttpServer } from '@nestjs/common/interfaces';
-import { CorsOptions } from '@nestjs/common/interfaces/external/cors-options.interface';
-import { ServeStaticOptions } from '@nestjs/common/interfaces/external/serve-static-options.interface';
-import { MicroserviceOptions } from '@nestjs/common/interfaces/microservices/microservice-configuration.interface';
-import { NestApplicationOptions } from '@nestjs/common/interfaces/nest-application-options.interface';
-import { INestExpressApplication } from '@nestjs/common/interfaces/nest-express-application.interface';
-import { INestFastifyApplication } from '@nestjs/common/interfaces/nest-fastify-application.interface';
-import { Logger } from '@nestjs/common/services/logger.service';
-import { loadPackage } from '@nestjs/common/utils/load-package.util';
+} from '@nestjs-client/common';
+import { HttpServer } from '@nestjs-client/common/interfaces';
+import { CorsOptions } from '@nestjs-client/common/interfaces/external/cors-options.interface';
+import { ServeStaticOptions } from '@nestjs-client/common/interfaces/external/serve-static-options.interface';
+import { MicroserviceOptions } from '@nestjs-client/common/interfaces/microservices/microservice-configuration.interface';
+import { NestApplicationOptions } from '@nestjs-client/common/interfaces/nest-application-options.interface';
+import { INestExpressApplication } from '@nestjs-client/common/interfaces/nest-express-application.interface';
+import { INestFastifyApplication } from '@nestjs-client/common/interfaces/nest-fastify-application.interface';
+import { Logger } from '@nestjs-client/common/services/logger.service';
+import { loadPackage } from '@nestjs-client/common/utils/load-package.util';
 import {
   isFunction,
   isObject,
   validatePath,
-} from '@nestjs/common/utils/shared.utils';
+} from '@nestjs-client/common/utils/shared.utils';
 import * as bodyParser from 'body-parser';
 import * as cors from 'cors';
 import * as http from 'http';
@@ -39,11 +39,11 @@ import { Resolver } from './router/interfaces/resolver.interface';
 import { RoutesResolver } from './router/routes-resolver';
 
 const { SocketModule } =
-  optional('@nestjs/websockets/socket-module') || ({} as any);
+  optional('@nestjs-client/websockets/socket-module') || ({} as any);
 const { MicroservicesModule } =
-  optional('@nestjs/microservices/microservices-module') || ({} as any);
+  optional('@nestjs-client/microservices/microservices-module') || ({} as any);
 const { IoAdapter } =
-  optional('@nestjs/websockets/adapters/io-adapter') || ({} as any);
+  optional('@nestjs-client/websockets/adapters/io-adapter') || ({} as any);
 
 export class NestApplication extends NestApplicationContext
   implements INestApplication,
@@ -200,7 +200,7 @@ export class NestApplication extends NestApplicationContext
 
   public connectMicroservice(options: MicroserviceOptions): INestMicroservice {
     const { NestMicroservice } = loadPackage(
-      '@nestjs/microservices',
+      '@nestjs-client/microservices',
       'NestFactory',
     );
 

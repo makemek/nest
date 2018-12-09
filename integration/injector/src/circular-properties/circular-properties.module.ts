@@ -1,4 +1,4 @@
-import { forwardRef, Module } from '@nestjs/common';
+import { forwardRef, Module } from '@nestjs-client/common';
 import { CircularService } from './circular.service';
 import { InputPropertiesModule } from './input-properties.module';
 

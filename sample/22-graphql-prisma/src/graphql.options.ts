@@ -1,5 +1,5 @@
 import { GqlOptionsFactory, GqlModuleOptions } from '@nestjs/graphql';
-import { Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs-client/common';
 import { join } from 'path';
 
 @Injectable()

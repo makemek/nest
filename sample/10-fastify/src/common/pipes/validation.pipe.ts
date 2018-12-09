@@ -1,9 +1,9 @@
-import { BadRequestException } from '@nestjs/common';
+import { BadRequestException } from '@nestjs-client/common';
 import {
   PipeTransform,
   Injectable,
   ArgumentMetadata,
-} from '@nestjs/common';
+} from '@nestjs-client/common';
 import { validate } from 'class-validator';
 import { plainToClass } from 'class-transformer';
 

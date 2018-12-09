@@ -1,8 +1,8 @@
-import { CanActivate } from '@nestjs/common';
-import { GUARDS_METADATA } from '@nestjs/common/constants';
-import { Controller } from '@nestjs/common/interfaces';
-import { ConfigurationProvider } from '@nestjs/common/interfaces/configuration-provider.interface';
-import { isEmpty, isFunction, isUndefined } from '@nestjs/common/utils/shared.utils';
+import { CanActivate } from '@nestjs-client/common';
+import { GUARDS_METADATA } from '@nestjs-client/common/constants';
+import { Controller } from '@nestjs-client/common/interfaces';
+import { ConfigurationProvider } from '@nestjs-client/common/interfaces/configuration-provider.interface';
+import { isEmpty, isFunction, isUndefined } from '@nestjs-client/common/utils/shared.utils';
 import iterate from 'iterare';
 import { ContextCreator } from '../helpers/context-creator';
 import { NestContainer } from '../injector/container';

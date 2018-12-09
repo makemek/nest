@@ -1,4 +1,4 @@
-import { BadRequestException, Post } from '@nestjs/common';
+import { BadRequestException, Post } from '@nestjs-client/common';
 import { expect } from 'chai';
 import * as sinon from 'sinon';
 import { Controller } from '../../../common/decorators/core/controller.decorator';

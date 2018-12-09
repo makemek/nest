@@ -2,10 +2,10 @@ import {
   INestApplicationContext,
   Logger,
   WebSocketAdapter,
-} from '@nestjs/common';
-import { loadPackage } from '@nestjs/common/utils/load-package.util';
-import { isFunction } from '@nestjs/common/utils/shared.utils';
-import { NestApplication } from '@nestjs/core';
+} from '@nestjs-client/common';
+import { loadPackage } from '@nestjs-client/common/utils/load-package.util';
+import { isFunction } from '@nestjs-client/common/utils/shared.utils';
+import { NestApplication } from '@nestjs-client/core';
 import { Server } from 'http';
 import { EMPTY as empty, fromEvent, Observable } from 'rxjs';
 import { filter, first, mergeMap, share, takeUntil } from 'rxjs/operators';

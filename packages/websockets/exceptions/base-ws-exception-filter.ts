@@ -1,6 +1,6 @@
-import { ArgumentsHost, WsExceptionFilter } from '@nestjs/common';
-import { isObject } from '@nestjs/common/utils/shared.utils';
-import { MESSAGES } from '@nestjs/core/constants';
+import { ArgumentsHost, WsExceptionFilter } from '@nestjs-client/common';
+import { isObject } from '@nestjs-client/common/utils/shared.utils';
+import { MESSAGES } from '@nestjs-client/core/constants';
 import { WsException } from './ws-exception';
 
 export class BaseWsExceptionFilter<T = any> implements WsExceptionFilter<T> {

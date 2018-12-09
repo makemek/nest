@@ -1,6 +1,6 @@
-import { DynamicModule } from '@nestjs/common';
-import { SHARED_MODULE_METADATA } from '@nestjs/common/constants';
-import { Type } from '@nestjs/common/interfaces/type.interface';
+import { DynamicModule } from '@nestjs-client/common';
+import { SHARED_MODULE_METADATA } from '@nestjs-client/common/constants';
+import { Type } from '@nestjs-client/common/interfaces/type.interface';
 import * as hash from 'object-hash';
 import stringify from 'fast-safe-stringify';
 

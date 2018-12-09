@@ -1,7 +1,7 @@
-import { Type } from '@nestjs/common/interfaces/type.interface';
-import { isFunction } from '@nestjs/common/utils/shared.utils';
-import { ApplicationConfig } from '@nestjs/core/application-config';
-import { MetadataScanner } from '@nestjs/core/metadata-scanner';
+import { Type } from '@nestjs-client/common/interfaces/type.interface';
+import { isFunction } from '@nestjs-client/common/utils/shared.utils';
+import { ApplicationConfig } from '@nestjs-client/core/application-config';
+import { MetadataScanner } from '@nestjs-client/core/metadata-scanner';
 import { from as fromPromise, Observable, of, Subject } from 'rxjs';
 import { distinctUntilChanged, mergeAll } from 'rxjs/operators';
 import { GATEWAY_OPTIONS, PORT_METADATA } from './constants';

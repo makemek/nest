@@ -2,7 +2,7 @@ import * as sinon from 'sinon';
 import { expect } from 'chai';
 import { Observable, of } from 'rxjs';
 import { InterceptorsConsumer } from '../../interceptors/interceptors-consumer';
-import { ExecutionContextHost } from '@nestjs/core/helpers/execution-context.host';
+import { ExecutionContextHost } from '@nestjs-client/core/helpers/execution-context.host';
 
 describe('InterceptorsConsumer', () => {
   let consumer: InterceptorsConsumer;

@@ -1,4 +1,4 @@
-import { Get, BadRequestException, Controller } from '@nestjs/common';
+import { Get, BadRequestException, Controller } from '@nestjs-client/common';
 
 @Controller()
 export class ErrorsController {

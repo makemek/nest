@@ -1,10 +1,10 @@
-import { ExecutionContext } from '@nestjs/common';
-import { Type } from '@nestjs/common/interfaces';
+import { ExecutionContext } from '@nestjs-client/common';
+import { Type } from '@nestjs-client/common/interfaces';
 import {
   RpcArgumentsHost,
   WsArgumentsHost,
   HttpArgumentsHost,
-} from '@nestjs/common/interfaces/features/arguments-host.interface';
+} from '@nestjs-client/common/interfaces/features/arguments-host.interface';
 
 export class ExecutionContextHost implements ExecutionContext {
   constructor(

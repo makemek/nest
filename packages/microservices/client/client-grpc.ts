@@ -1,6 +1,6 @@
-import { Logger } from '@nestjs/common/services/logger.service';
-import { loadPackage } from '@nestjs/common/utils/load-package.util';
-import { isObject } from '@nestjs/common/utils/shared.utils';
+import { Logger } from '@nestjs-client/common/services/logger.service';
+import { loadPackage } from '@nestjs-client/common/utils/load-package.util';
+import { isObject } from '@nestjs-client/common/utils/shared.utils';
 import { Observable } from 'rxjs';
 import { GRPC_DEFAULT_URL } from '../constants';
 import { InvalidGrpcPackageException } from '../exceptions/errors/invalid-grpc-package.exception';

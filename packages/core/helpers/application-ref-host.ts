@@ -1,4 +1,4 @@
-import { HttpServer } from '@nestjs/common';
+import { HttpServer } from '@nestjs-client/common';
 
 export class ApplicationReferenceHost {
   private _applicationRef: HttpServer | any;

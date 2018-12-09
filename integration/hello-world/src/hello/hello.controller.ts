@@ -1,5 +1,5 @@
 import { HelloService } from './hello.service';
-import { Controller, Get, Header, Param } from '@nestjs/common';
+import { Controller, Get, Header, Param } from '@nestjs-client/common';
 import { Observable, of } from 'rxjs';
 import { UserByIdPipe } from './users/user-by-id.pipe';
 

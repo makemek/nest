@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Module } from '@nestjs-client/common';
 import { CatsResolvers } from './cats.resolvers';
 import { CatsService } from './cats.service';
 

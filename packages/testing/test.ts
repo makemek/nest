@@ -1,5 +1,5 @@
-import { ModuleMetadata } from '@nestjs/common/interfaces/modules/module-metadata.interface';
-import { MetadataScanner } from '@nestjs/core/metadata-scanner';
+import { ModuleMetadata } from '@nestjs-client/common/interfaces/modules/module-metadata.interface';
+import { MetadataScanner } from '@nestjs-client/core/metadata-scanner';
 import { TestingModuleBuilder } from './testing-module.builder';
 
 export class Test {

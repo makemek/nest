@@ -1,6 +1,6 @@
-import { NestInterceptor } from '@nestjs/common';
-import { Controller } from '@nestjs/common/interfaces';
-import { isEmpty } from '@nestjs/common/utils/shared.utils';
+import { NestInterceptor } from '@nestjs-client/common';
+import { Controller } from '@nestjs-client/common/interfaces';
+import { isEmpty } from '@nestjs-client/common/utils/shared.utils';
 import { defer, from as fromPromise, Observable } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 import { ExecutionContextHost } from '../helpers/execution-context.host';

@@ -1,5 +1,5 @@
-import { Type } from '@nestjs/common';
-import { isNil } from '@nestjs/common/utils/shared.utils';
+import { Type } from '@nestjs-client/common';
+import { isNil } from '@nestjs-client/common/utils/shared.utils';
 import {
   InjectorDependency,
   InjectorDependencyContext,
@@ -65,4 +65,4 @@ export const INVALID_MIDDLEWARE_CONFIGURATION = `Invalid middleware configuratio
 export const UNKNOWN_REQUEST_MAPPING = `Request mapping properties not defined in the @RequestMapping() annotation!`;
 export const UNHANDLED_RUNTIME_EXCEPTION = `Unhandled Runtime Exception.`;
 export const INVALID_EXCEPTION_FILTER = `Invalid exception filters (@UseFilters()).`;
-export const MICROSERVICES_PACKAGE_NOT_FOUND_EXCEPTION = `Unable to load @nestjs/microservices package. (Please make sure that it's already installed.)`;
+export const MICROSERVICES_PACKAGE_NOT_FOUND_EXCEPTION = `Unable to load @nestjs-client/microservices package. (Please make sure that it's already installed.)`;

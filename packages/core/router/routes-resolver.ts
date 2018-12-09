@@ -1,8 +1,8 @@
-import { BadRequestException, NotFoundException } from '@nestjs/common';
-import { MODULE_PATH } from '@nestjs/common/constants';
-import { HttpServer } from '@nestjs/common/interfaces';
-import { Controller } from '@nestjs/common/interfaces/controllers/controller.interface';
-import { Logger } from '@nestjs/common/services/logger.service';
+import { BadRequestException, NotFoundException } from '@nestjs-client/common';
+import { MODULE_PATH } from '@nestjs-client/common/constants';
+import { HttpServer } from '@nestjs-client/common/interfaces';
+import { Controller } from '@nestjs-client/common/interfaces/controllers/controller.interface';
+import { Logger } from '@nestjs-client/common/services/logger.service';
 import { ApplicationConfig } from '../application-config';
 import { CONTROLLER_MAPPING_MESSAGE } from '../helpers/messages';
 import { InstanceWrapper, NestContainer } from '../injector/container';

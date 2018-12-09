@@ -1,4 +1,4 @@
-import { Transform } from '@nestjs/common/interfaces';
+import { Transform } from '@nestjs-client/common/interfaces';
 import { ParamsTokenFactory } from './params-token-factory';
 
 export class PipesConsumer {

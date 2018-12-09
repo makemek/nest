@@ -1,7 +1,7 @@
-import { HttpServer } from '@nestjs/common';
-import { EXCEPTION_FILTERS_METADATA } from '@nestjs/common/constants';
-import { Controller } from '@nestjs/common/interfaces/controllers/controller.interface';
-import { isEmpty } from '@nestjs/common/utils/shared.utils';
+import { HttpServer } from '@nestjs-client/common';
+import { EXCEPTION_FILTERS_METADATA } from '@nestjs-client/common/constants';
+import { Controller } from '@nestjs-client/common/interfaces/controllers/controller.interface';
+import { isEmpty } from '@nestjs-client/common/utils/shared.utils';
 import { ApplicationConfig } from '../application-config';
 import { BaseExceptionFilterContext } from '../exceptions/base-exception-filter-context';
 import { ExceptionsHandler } from '../exceptions/exceptions-handler';

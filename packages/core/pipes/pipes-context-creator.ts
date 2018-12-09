@@ -1,6 +1,6 @@
-import { PIPES_METADATA } from '@nestjs/common/constants';
-import { Controller, PipeTransform, Transform } from '@nestjs/common/interfaces';
-import { isEmpty, isFunction, isUndefined } from '@nestjs/common/utils/shared.utils';
+import { PIPES_METADATA } from '@nestjs-client/common/constants';
+import { Controller, PipeTransform, Transform } from '@nestjs-client/common/interfaces';
+import { isEmpty, isFunction, isUndefined } from '@nestjs-client/common/utils/shared.utils';
 import iterate from 'iterare';
 import { ApplicationConfig } from '../application-config';
 import { ContextCreator } from '../helpers/context-creator';

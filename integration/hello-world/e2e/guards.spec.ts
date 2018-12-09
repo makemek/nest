@@ -1,8 +1,8 @@
 import * as request from 'supertest';
-import { Test } from '@nestjs/testing';
-import { INestApplication, Injectable, UnauthorizedException } from '@nestjs/common';
+import { Test } from '@nestjs-client/testing';
+import { INestApplication, Injectable, UnauthorizedException } from '@nestjs-client/common';
 import { ApplicationModule } from '../src/app.module';
-import { APP_GUARD } from '@nestjs/core';
+import { APP_GUARD } from '@nestjs-client/core';
 
 @Injectable()
 export class AuthGuard {

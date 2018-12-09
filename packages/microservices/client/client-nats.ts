@@ -1,5 +1,5 @@
-import { Logger } from '@nestjs/common/services/logger.service';
-import { loadPackage } from '@nestjs/common/utils/load-package.util';
+import { Logger } from '@nestjs-client/common/services/logger.service';
+import { loadPackage } from '@nestjs-client/common/utils/load-package.util';
 import { share } from 'rxjs/operators';
 import { ERROR_EVENT, NATS_DEFAULT_URL } from '../constants';
 import { Client } from '../external/nats-client.interface';

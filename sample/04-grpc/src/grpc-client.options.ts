@@ -1,4 +1,4 @@
-import { ClientOptions, Transport } from '@nestjs/microservices';
+import { ClientOptions, Transport } from '@nestjs-client/microservices';
 import { join } from 'path';
 
 export const grpcClientOptions: ClientOptions = {

@@ -3,7 +3,7 @@ import {
   WebSocketGateway,
   WebSocketServer,
   WsResponse,
-} from '@nestjs/websockets';
+} from '@nestjs-client/websockets';
 import { from, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 

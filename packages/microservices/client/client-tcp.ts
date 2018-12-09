@@ -1,4 +1,4 @@
-import { Logger } from '@nestjs/common';
+import { Logger } from '@nestjs-client/common';
 import * as JsonSocket from 'json-socket';
 import * as net from 'net';
 import { share, tap } from 'rxjs/operators';

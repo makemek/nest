@@ -1,6 +1,6 @@
-import { RequestMethod } from '@nestjs/common';
-import { HttpServer, RequestHandler } from '@nestjs/common/interfaces';
-import { ServeStaticOptions } from '@nestjs/common/interfaces/external/serve-static-options.interface';
+import { RequestMethod } from '@nestjs-client/common';
+import { HttpServer, RequestHandler } from '@nestjs-client/common/interfaces';
+import { ServeStaticOptions } from '@nestjs-client/common/interfaces/external/serve-static-options.interface';
 import { RouterMethodFactory } from '../helpers/router-method-factory';
 import * as Router from "router"
 import * as queryString from 'query-string'

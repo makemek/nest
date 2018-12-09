@@ -1,4 +1,4 @@
-import { FastifyAdapter, NestFactory } from '@nestjs/core';
+import { FastifyAdapter, NestFactory } from '@nestjs-client/core';
 import { join } from 'path';
 import { ApplicationModule } from './app.module';
 

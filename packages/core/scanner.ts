@@ -1,4 +1,4 @@
-import { DynamicModule, ForwardReference } from '@nestjs/common';
+import { DynamicModule, ForwardReference } from '@nestjs-client/common';
 import {
   EXCEPTION_FILTERS_METADATA,
   GATEWAY_MIDDLEWARES,
@@ -7,16 +7,16 @@ import {
   METADATA,
   PIPES_METADATA,
   ROUTE_ARGS_METADATA,
-} from '@nestjs/common/constants';
-import { Controller } from '@nestjs/common/interfaces/controllers/controller.interface';
-import { Injectable } from '@nestjs/common/interfaces/injectable.interface';
-import { Type } from '@nestjs/common/interfaces/type.interface';
-import { randomStringGenerator } from '@nestjs/common/utils/random-string-generator.util';
+} from '@nestjs-client/common/constants';
+import { Controller } from '@nestjs-client/common/interfaces/controllers/controller.interface';
+import { Injectable } from '@nestjs-client/common/interfaces/injectable.interface';
+import { Type } from '@nestjs-client/common/interfaces/type.interface';
+import { randomStringGenerator } from '@nestjs-client/common/utils/random-string-generator.util';
 import {
   isFunction,
   isNil,
   isUndefined,
-} from '@nestjs/common/utils/shared.utils';
+} from '@nestjs-client/common/utils/shared.utils';
 import { ApplicationConfig } from './application-config';
 import { APP_FILTER, APP_GUARD, APP_INTERCEPTOR, APP_PIPE } from './constants';
 import { CircularDependencyException } from './errors/exceptions/circular-dependency.exception';

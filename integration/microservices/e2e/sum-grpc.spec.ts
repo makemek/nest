@@ -1,6 +1,6 @@
-import { INestApplication } from '@nestjs/common';
-import { Transport } from '@nestjs/microservices';
-import { Test } from '@nestjs/testing';
+import { INestApplication } from '@nestjs-client/common';
+import { Transport } from '@nestjs-client/microservices';
+import { Test } from '@nestjs-client/testing';
 import * as express from 'express';
 import { join } from 'path';
 import * as request from 'supertest';

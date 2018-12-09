@@ -1,8 +1,8 @@
 import * as express from 'express';
 import * as request from 'supertest';
-import { Test } from '@nestjs/testing';
-import { INestApplication } from '@nestjs/common';
-import { Transport } from '@nestjs/microservices';
+import { Test } from '@nestjs-client/testing';
+import { INestApplication } from '@nestjs-client/common';
+import { Transport } from '@nestjs-client/microservices';
 import { MqttBroadcastController } from '../src/mqtt/mqtt-broadcast.controller';
 
 describe('MQTT transport', () => {

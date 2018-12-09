@@ -1,4 +1,4 @@
-import { RequestMethod } from '@nestjs/common';
+import { RequestMethod } from '@nestjs-client/common';
 import { expect } from 'chai';
 import { Controller, Get } from '../../../common';
 import { NestContainer } from '../../injector/container';

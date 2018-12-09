@@ -1,4 +1,4 @@
-import { ServerNats } from '@nestjs/microservices';
+import { ServerNats } from '@nestjs-client/microservices';
 
 export interface NatsSubscriber {
   key: string;

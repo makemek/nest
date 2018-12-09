@@ -1,10 +1,10 @@
-import { Body, Controller, HttpCode, Post, Query } from '@nestjs/common';
+import { Body, Controller, HttpCode, Post, Query } from '@nestjs-client/common';
 import {
   Client,
   ClientProxy,
   MessagePattern,
   Transport,
-} from '@nestjs/microservices';
+} from '@nestjs-client/microservices';
 import { from, Observable, of } from 'rxjs';
 import { scan } from 'rxjs/operators';
 

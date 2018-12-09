@@ -1,5 +1,5 @@
-import { Type } from '@nestjs/common';
-import { isFunction } from '@nestjs/common/utils/shared.utils';
+import { Type } from '@nestjs-client/common';
+import { isFunction } from '@nestjs-client/common/utils/shared.utils';
 import { UnknownElementException } from '../errors/exceptions/unknown-element.exception';
 import { InstanceWrapper, NestContainer } from './container';
 import { Module } from './module';

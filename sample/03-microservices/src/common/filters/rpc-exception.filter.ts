@@ -1,6 +1,6 @@
-import { Catch, RpcExceptionFilter } from '@nestjs/common';
+import { Catch, RpcExceptionFilter } from '@nestjs-client/common';
 import { Observable, throwError } from 'rxjs';
-import { RpcException } from '@nestjs/microservices';
+import { RpcException } from '@nestjs-client/microservices';
 
 @Catch(RpcException)
 export class ExceptionFilter implements RpcExceptionFilter {

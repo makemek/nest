@@ -1,5 +1,5 @@
-import { ParseIntPipe } from '@nestjs/common';
-import { ROUTE_ARGS_METADATA } from '@nestjs/common/constants';
+import { ParseIntPipe } from '@nestjs-client/common';
+import { ROUTE_ARGS_METADATA } from '@nestjs-client/common/constants';
 import { expect } from 'chai';
 import { createRouteParamDecorator } from '../../decorators/http/create-route-param-metadata.decorator';
 

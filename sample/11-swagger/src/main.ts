@@ -1,4 +1,4 @@
-import { NestFactory } from '@nestjs/core';
+import { NestFactory } from '@nestjs-client/core';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { ApplicationModule } from './app.module';
 

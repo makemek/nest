@@ -3,16 +3,16 @@ import {
   INestApplication,
   INestApplicationContext,
   INestMicroservice,
-} from '@nestjs/common';
-import { MicroserviceOptions } from '@nestjs/common/interfaces/microservices/microservice-configuration.interface';
-import { NestMicroserviceOptions } from '@nestjs/common/interfaces/microservices/nest-microservice-options.interface';
-import { NestApplicationContextOptions } from '@nestjs/common/interfaces/nest-application-context-options.interface';
-import { NestApplicationOptions } from '@nestjs/common/interfaces/nest-application-options.interface';
-import { INestExpressApplication } from '@nestjs/common/interfaces/nest-express-application.interface';
-import { INestFastifyApplication } from '@nestjs/common/interfaces/nest-fastify-application.interface';
-import { Logger } from '@nestjs/common/services/logger.service';
-import { loadPackage } from '@nestjs/common/utils/load-package.util';
-import { isFunction, isNil } from '@nestjs/common/utils/shared.utils';
+} from '@nestjs-client/common';
+import { MicroserviceOptions } from '@nestjs-client/common/interfaces/microservices/microservice-configuration.interface';
+import { NestMicroserviceOptions } from '@nestjs-client/common/interfaces/microservices/nest-microservice-options.interface';
+import { NestApplicationContextOptions } from '@nestjs-client/common/interfaces/nest-application-context-options.interface';
+import { NestApplicationOptions } from '@nestjs-client/common/interfaces/nest-application-options.interface';
+import { INestExpressApplication } from '@nestjs-client/common/interfaces/nest-express-application.interface';
+import { INestFastifyApplication } from '@nestjs-client/common/interfaces/nest-fastify-application.interface';
+import { Logger } from '@nestjs-client/common/services/logger.service';
+import { loadPackage } from '@nestjs-client/common/utils/load-package.util';
+import { isFunction, isNil } from '@nestjs-client/common/utils/shared.utils';
 import { BrowserAdapter } from './adapters/browser-adapter';
 import { ApplicationConfig } from './application-config';
 import { MESSAGES } from './constants';
@@ -74,7 +74,7 @@ export class NestFactoryStatic {
     options?: NestMicroserviceOptions & MicroserviceOptions,
   ): Promise<INestMicroservice> {
     const { NestMicroservice } = loadPackage(
-      '@nestjs/microservices',
+      '@nestjs-client/microservices',
       'NestFactory',
     );
 

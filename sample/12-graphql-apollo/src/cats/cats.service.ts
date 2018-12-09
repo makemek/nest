@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs-client/common';
 import { Cat } from '../graphql.schema';
 
 @Injectable()

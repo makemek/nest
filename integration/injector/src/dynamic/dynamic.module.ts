@@ -1,4 +1,4 @@
-import { Module, DynamicModule } from '@nestjs/common';
+import { Module, DynamicModule } from '@nestjs-client/common';
 
 export const DYNAMIC_TOKEN = 'DYNAMIC_TOKEN';
 export const DYNAMIC_VALUE = {};

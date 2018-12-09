@@ -3,7 +3,7 @@ import {
   Catch,
   ExceptionFilter,
   HttpException,
-} from '@nestjs/common';
+} from '@nestjs-client/common';
 
 @Catch()
 export class HttpExceptionFilter implements ExceptionFilter {

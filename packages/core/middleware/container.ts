@@ -1,6 +1,6 @@
-import { MiddlewareConfiguration } from '@nestjs/common/interfaces/middleware/middleware-configuration.interface';
-import { NestMiddleware } from '@nestjs/common/interfaces/middleware/nest-middleware.interface';
-import { Type } from '@nestjs/common/interfaces/type.interface';
+import { MiddlewareConfiguration } from '@nestjs-client/common/interfaces/middleware/middleware-configuration.interface';
+import { NestMiddleware } from '@nestjs-client/common/interfaces/middleware/nest-middleware.interface';
+import { Type } from '@nestjs-client/common/interfaces/type.interface';
 
 export class MiddlewareContainer {
   private readonly middleware = new Map<

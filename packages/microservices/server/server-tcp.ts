@@ -1,4 +1,4 @@
-import { isString } from '@nestjs/common/utils/shared.utils';
+import { isString } from '@nestjs-client/common/utils/shared.utils';
 import * as JsonSocket from 'json-socket';
 import * as net from 'net';
 import { Server as NetSocket } from 'net';

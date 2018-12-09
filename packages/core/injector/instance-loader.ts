@@ -1,6 +1,6 @@
-import { Logger } from '@nestjs/common';
-import { Controller } from '@nestjs/common/interfaces/controllers/controller.interface';
-import { Injectable } from '@nestjs/common/interfaces/injectable.interface';
+import { Logger } from '@nestjs-client/common';
+import { Controller } from '@nestjs-client/common/interfaces/controllers/controller.interface';
+import { Injectable } from '@nestjs-client/common/interfaces/injectable.interface';
 import { MODULE_INIT_MESSAGE } from '../helpers/messages';
 import { NestContainer } from './container';
 import { Injector } from './injector';

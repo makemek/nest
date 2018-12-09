@@ -1,6 +1,6 @@
-import { ParamData } from '@nestjs/common';
-import { PARAMTYPES_METADATA } from '@nestjs/common/constants';
-import { Controller, PipeTransform } from '@nestjs/common/interfaces';
+import { ParamData } from '@nestjs-client/common';
+import { PARAMTYPES_METADATA } from '@nestjs-client/common/constants';
+import { Controller, PipeTransform } from '@nestjs-client/common/interfaces';
 
 export interface ParamProperties<T = any, IExtractor extends Function = any> {
   index: number;

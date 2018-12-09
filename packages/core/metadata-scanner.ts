@@ -1,10 +1,10 @@
 import iterate from 'iterare';
-import { Injectable } from '@nestjs/common/interfaces/injectable.interface';
+import { Injectable } from '@nestjs-client/common/interfaces/injectable.interface';
 import {
   isConstructor,
   isFunction,
   isNil,
-} from '@nestjs/common/utils/shared.utils';
+} from '@nestjs-client/common/utils/shared.utils';
 
 export class MetadataScanner {
   public scanFromPrototype<T extends Injectable, R>(

@@ -1,8 +1,8 @@
 import * as request from 'supertest';
-import { Test } from '@nestjs/testing';
+import { Test } from '@nestjs-client/testing';
 import { CatsModule } from '../../src/cats/cats.module';
 import { CatsService } from '../../src/cats/cats.service';
-import { INestApplication } from '@nestjs/common';
+import { INestApplication } from '@nestjs-client/common';
 
 describe('Cats', () => {
   let app: INestApplication;

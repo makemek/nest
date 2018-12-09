@@ -1,5 +1,5 @@
-import { INestApplication } from '@nestjs/common';
-import { NestFactory } from '@nestjs/core';
+import { INestApplication } from '@nestjs-client/common';
+import { NestFactory } from '@nestjs-client/core';
 import * as request from 'supertest';
 import { AsyncApplicationModule } from '../src/async-options.module';
 

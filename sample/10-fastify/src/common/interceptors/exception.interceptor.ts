@@ -3,8 +3,8 @@ import {
   NestInterceptor,
   ExecutionContext,
   HttpStatus,
-} from '@nestjs/common';
-import { HttpException } from '@nestjs/common';
+} from '@nestjs-client/common';
+import { HttpException } from '@nestjs-client/common';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 

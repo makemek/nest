@@ -4,7 +4,7 @@ import { UseFilters } from '../../../common/decorators/core/exception-filters.de
 import { Catch } from '../../../common/decorators/core/catch.decorator';
 import { ExceptionFiltersContext } from '../../context/exception-filters-context';
 import { ApplicationConfig } from '../../../core/application-config';
-import { NestContainer } from '@nestjs/core/injector/container';
+import { NestContainer } from '@nestjs-client/core/injector/container';
 
 describe('ExceptionFiltersContext', () => {
   let moduleName: string;

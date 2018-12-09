@@ -7,7 +7,7 @@ import {
   Post,
   UseGuards,
   UseInterceptors,
-} from '@nestjs/common';
+} from '@nestjs-client/common';
 import { Roles } from '../common/decorators/roles.decorator';
 import { RolesGuard } from '../common/guards/roles.guard';
 import { LoggingInterceptor } from '../common/interceptors/logging.interceptor';

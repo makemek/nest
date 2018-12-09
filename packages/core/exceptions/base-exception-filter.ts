@@ -7,8 +7,8 @@ import {
   Inject,
   Logger,
   Optional,
-} from '@nestjs/common';
-import { isObject } from '@nestjs/common/utils/shared.utils';
+} from '@nestjs-client/common';
+import { isObject } from '@nestjs-client/common/utils/shared.utils';
 import { MESSAGES } from '../constants';
 import { ApplicationReferenceHost } from './../helpers/application-ref-host';
 

@@ -1,4 +1,4 @@
-import { RequestMethod } from '@nestjs/common/enums/request-method.enum';
+import { RequestMethod } from '@nestjs-client/common/enums/request-method.enum';
 
 export const MODULE_INIT_MESSAGE = (text, module: string) =>
   `${module} dependencies initialized`;

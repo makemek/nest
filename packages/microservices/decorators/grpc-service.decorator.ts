@@ -1,4 +1,4 @@
-import { Controller } from '@nestjs/common';
+import { Controller } from '@nestjs-client/common';
 
 /**
  * Defines the GrpcService. The service can inject dependencies through constructor.

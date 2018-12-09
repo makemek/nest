@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Module } from '@nestjs-client/common';
 import { PostsResolver } from './posts.resolver';
 import { PrismaModule } from 'prisma/prisma.module';
 

@@ -1,5 +1,5 @@
-import { NestFactory, FastifyAdapter } from '@nestjs/core';
-import { ValidationPipe } from '@nestjs/common';
+import { NestFactory, FastifyAdapter } from '@nestjs-client/core';
+import { ValidationPipe } from '@nestjs-client/common';
 import { ApplicationModule } from './app.module';
 
 async function bootstrap() {

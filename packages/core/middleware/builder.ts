@@ -1,13 +1,13 @@
-import { RequestMethod } from '@nestjs/common';
-import { flatten } from '@nestjs/common/decorators/core/dependencies.decorator';
-import { MiddlewareConsumer, Type } from '@nestjs/common/interfaces';
+import { RequestMethod } from '@nestjs-client/common';
+import { flatten } from '@nestjs-client/common/decorators/core/dependencies.decorator';
+import { MiddlewareConsumer, Type } from '@nestjs-client/common/interfaces';
 import {
   MiddlewareConfigProxy,
   RouteInfo,
-} from '@nestjs/common/interfaces/middleware';
-import { MiddlewareConfiguration } from '@nestjs/common/interfaces/middleware/middleware-configuration.interface';
-import { BindResolveMiddlewareValues } from '@nestjs/common/utils/bind-resolve-values.util';
-import { isNil } from '@nestjs/common/utils/shared.utils';
+} from '@nestjs-client/common/interfaces/middleware';
+import { MiddlewareConfiguration } from '@nestjs-client/common/interfaces/middleware/middleware-configuration.interface';
+import { BindResolveMiddlewareValues } from '@nestjs-client/common/utils/bind-resolve-values.util';
+import { isNil } from '@nestjs-client/common/utils/shared.utils';
 import { RoutesMapper } from './routes-mapper';
 import { filterMiddleware } from './utils';
 

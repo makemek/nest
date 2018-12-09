@@ -1,7 +1,7 @@
-import { HttpException } from '@nestjs/common';
-import { ExceptionFilterMetadata } from '@nestjs/common/interfaces/exceptions/exception-filter-metadata.interface';
-import { ArgumentsHost } from '@nestjs/common/interfaces/features/arguments-host.interface';
-import { isEmpty } from '@nestjs/common/utils/shared.utils';
+import { HttpException } from '@nestjs-client/common';
+import { ExceptionFilterMetadata } from '@nestjs-client/common/interfaces/exceptions/exception-filter-metadata.interface';
+import { ArgumentsHost } from '@nestjs-client/common/interfaces/features/arguments-host.interface';
+import { isEmpty } from '@nestjs-client/common/utils/shared.utils';
 import { InvalidExceptionFilterException } from '../errors/exceptions/invalid-exception-filter.exception';
 import { BaseExceptionFilter } from './base-exception-filter';
 

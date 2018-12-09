@@ -1,5 +1,8 @@
-import { isFunction, isUndefined } from '@nestjs/common/utils/shared.utils';
-import { MetadataScanner } from '@nestjs/core/metadata-scanner';
+import {
+  isFunction,
+  isUndefined,
+} from '@nestjs-client/common/utils/shared.utils';
+import { MetadataScanner } from '@nestjs-client/core/metadata-scanner';
 import { Observable } from 'rxjs';
 import {
   GATEWAY_SERVER_METADATA,

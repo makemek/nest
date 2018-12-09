@@ -1,7 +1,7 @@
-import { INestApplication } from '@nestjs/common';
-import { INestFastifyApplication } from '@nestjs/common/interfaces/nest-fastify-application.interface';
-import { FastifyAdapter } from '@nestjs/core/adapters/fastify-adapter';
-import { Test } from '@nestjs/testing';
+import { INestApplication } from '@nestjs-client/common';
+import { INestFastifyApplication } from '@nestjs-client/common/interfaces/nest-fastify-application.interface';
+import { FastifyAdapter } from '@nestjs-client/core/adapters/fastify-adapter';
+import { Test } from '@nestjs-client/testing';
 import { expect } from 'chai';
 import { ApplicationModule } from '../src/app.module';
 

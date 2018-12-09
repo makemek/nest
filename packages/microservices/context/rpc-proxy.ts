@@ -1,4 +1,4 @@
-import { ExecutionContextHost } from '@nestjs/core/helpers/execution-context.host';
+import { ExecutionContextHost } from '@nestjs-client/core/helpers/execution-context.host';
 import { Observable } from 'rxjs';
 import { RpcExceptionsHandler } from '../exceptions/rpc-exceptions-handler';
 

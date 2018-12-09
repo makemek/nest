@@ -1,5 +1,5 @@
-import { INestApplication } from '@nestjs/common';
-import { Test } from '@nestjs/testing';
+import { INestApplication } from '@nestjs-client/common';
+import { Test } from '@nestjs-client/testing';
 import * as request from 'supertest';
 import { AsyncOptionsClassModule } from '../src/async-class-options.module';
 

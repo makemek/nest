@@ -1,9 +1,9 @@
-import { METHOD_METADATA, PATH_METADATA } from '@nestjs/common/constants';
-import { RequestMethod } from '@nestjs/common/enums/request-method.enum';
-import { Controller } from '@nestjs/common/interfaces/controllers/controller.interface';
-import { Type } from '@nestjs/common/interfaces/type.interface';
-import { Logger } from '@nestjs/common/services/logger.service';
-import { isUndefined, validatePath } from '@nestjs/common/utils/shared.utils';
+import { METHOD_METADATA, PATH_METADATA } from '@nestjs-client/common/constants';
+import { RequestMethod } from '@nestjs-client/common/enums/request-method.enum';
+import { Controller } from '@nestjs-client/common/interfaces/controllers/controller.interface';
+import { Type } from '@nestjs-client/common/interfaces/type.interface';
+import { Logger } from '@nestjs-client/common/services/logger.service';
+import { isUndefined, validatePath } from '@nestjs-client/common/utils/shared.utils';
 import { ApplicationConfig } from '../application-config';
 import { UnknownRequestMappingException } from '../errors/exceptions/unknown-request-mapping.exception';
 import { GuardsConsumer } from '../guards/guards-consumer';

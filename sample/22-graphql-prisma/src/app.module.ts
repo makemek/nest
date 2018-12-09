@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Module } from '@nestjs-client/common';
 import { GraphQLModule } from '@nestjs/graphql';
 import { PrismaModule } from './prisma/prisma.module';
 import { PostsModule } from './posts/posts.module';

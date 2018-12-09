@@ -1,4 +1,4 @@
-import { Test } from '@nestjs/testing';
+import { Test } from '@nestjs-client/testing';
 import { expect } from 'chai';
 import { CircularPropertiesModule } from '../src/circular-properties/circular-properties.module';
 import { CircularService } from '../src/circular-properties/circular.service';

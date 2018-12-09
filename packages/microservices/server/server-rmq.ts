@@ -1,4 +1,4 @@
-import { loadPackage } from '@nestjs/common/utils/load-package.util';
+import { loadPackage } from '@nestjs-client/common/utils/load-package.util';
 import { Observable } from 'rxjs';
 import {
   CONNECT_EVENT,

@@ -1,4 +1,4 @@
-import { Type } from '@nestjs/common';
+import { Type } from '@nestjs-client/common';
 import { NestContainer } from './container';
 import { ContainerScanner } from './container-scanner';
 import { Injector } from './injector';

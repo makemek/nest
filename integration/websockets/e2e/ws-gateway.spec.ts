@@ -1,6 +1,6 @@
-import { INestApplication } from '@nestjs/common';
-import { Test } from '@nestjs/testing';
-import { WsAdapter } from '@nestjs/websockets/adapters/ws-adapter';
+import { INestApplication } from '@nestjs-client/common';
+import { Test } from '@nestjs-client/testing';
+import { WsAdapter } from '@nestjs-client/websockets/adapters/ws-adapter';
 import { expect } from 'chai';
 import * as WebSocket from 'ws';
 import { ApplicationGateway } from '../src/app.gateway';

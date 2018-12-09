@@ -1,10 +1,10 @@
-import { Logger, Module } from '@nestjs/common';
-import { ModuleMetadata } from '@nestjs/common/interfaces';
-import { ApplicationConfig } from '@nestjs/core/application-config';
-import { NestContainer } from '@nestjs/core/injector/container';
-import { InstanceLoader } from '@nestjs/core/injector/instance-loader';
-import { MetadataScanner } from '@nestjs/core/metadata-scanner';
-import { DependenciesScanner } from '@nestjs/core/scanner';
+import { Logger, Module } from '@nestjs-client/common';
+import { ModuleMetadata } from '@nestjs-client/common/interfaces';
+import { ApplicationConfig } from '@nestjs-client/core/application-config';
+import { NestContainer } from '@nestjs-client/core/injector/container';
+import { InstanceLoader } from '@nestjs-client/core/injector/instance-loader';
+import { MetadataScanner } from '@nestjs-client/core/metadata-scanner';
+import { DependenciesScanner } from '@nestjs-client/core/scanner';
 import * as deprecate from 'deprecate';
 import { OverrideBy, OverrideByFactoryOptions } from './interfaces';
 import { TestingLogger } from './services/testing-logger.service';

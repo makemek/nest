@@ -5,9 +5,9 @@ import {
   OnApplicationBootstrap,
   OnModuleDestroy,
   OnModuleInit,
-} from '@nestjs/common';
-import { Type } from '@nestjs/common/interfaces/type.interface';
-import { isNil, isUndefined } from '@nestjs/common/utils/shared.utils';
+} from '@nestjs-client/common';
+import { Type } from '@nestjs-client/common/interfaces/type.interface';
+import { isNil, isUndefined } from '@nestjs-client/common/utils/shared.utils';
 import iterate from 'iterare';
 import { UnknownModuleException } from './errors/exceptions/unknown-module.exception';
 import { NestContainer } from './injector/container';

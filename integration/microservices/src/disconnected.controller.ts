@@ -4,8 +4,8 @@ import {
   InternalServerErrorException,
   Post,
   RequestTimeoutException,
-} from '@nestjs/common';
-import { ClientProxyFactory } from '@nestjs/microservices';
+} from '@nestjs-client/common';
+import { ClientProxyFactory } from '@nestjs-client/microservices';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 

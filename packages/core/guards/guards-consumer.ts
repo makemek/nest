@@ -1,6 +1,6 @@
-import { isEmpty } from '@nestjs/common/utils/shared.utils';
-import { Controller } from '@nestjs/common/interfaces';
-import { CanActivate } from '@nestjs/common';
+import { isEmpty } from '@nestjs-client/common/utils/shared.utils';
+import { Controller } from '@nestjs-client/common/interfaces';
+import { CanActivate } from '@nestjs-client/common';
 import { Observable } from 'rxjs';
 import { ExecutionContextHost } from '../helpers/execution-context.host';
 

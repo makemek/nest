@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs-client/common';
 import { JwtService } from '@nestjs/jwt';
 import { JwtPayload } from './interfaces/jwt-payload.interface';
 

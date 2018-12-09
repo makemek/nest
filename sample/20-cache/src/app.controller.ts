@@ -3,7 +3,7 @@ import {
   Controller,
   Get,
   UseInterceptors,
-} from '@nestjs/common';
+} from '@nestjs-client/common';
 
 @Controller()
 @UseInterceptors(CacheInterceptor)

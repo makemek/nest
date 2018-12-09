@@ -1,4 +1,4 @@
-import { DynamicModule } from '@nestjs/common';
+import { DynamicModule } from '@nestjs-client/common';
 import { InputService } from './input.service';
 
 export class CircularModule {

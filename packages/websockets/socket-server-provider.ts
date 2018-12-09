@@ -1,8 +1,8 @@
 import { SocketsContainer } from './container';
 import { ObservableSocket } from './observable-socket';
 import { ObservableSocketServer } from './interfaces/observable-socket-server.interface';
-import { validatePath } from '@nestjs/common/utils/shared.utils';
-import { ApplicationConfig } from '@nestjs/core/application-config';
+import { validatePath } from '@nestjs-client/common/utils/shared.utils';
+import { ApplicationConfig } from '@nestjs-client/core/application-config';
 
 export class SocketServerProvider {
   constructor(

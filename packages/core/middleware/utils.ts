@@ -1,5 +1,5 @@
-import { Type } from '@nestjs/common/interfaces';
-import { isFunction } from '@nestjs/common/utils/shared.utils';
+import { Type } from '@nestjs-client/common/interfaces';
+import { isFunction } from '@nestjs-client/common/utils/shared.utils';
 import * as uuid from 'uuid/v4';
 
 export const filterMiddleware = middleware => {

@@ -1,4 +1,4 @@
-import { Injectable, Inject } from '@nestjs/common';
+import { Injectable, Inject } from '@nestjs-client/common';
 import { CreateCatDto } from './dto/create-cat.dto';
 import { Cat } from './cat.entity';
 

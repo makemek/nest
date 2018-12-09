@@ -1,4 +1,4 @@
-import { Param } from '@nestjs/common';
+import { Param } from '@nestjs-client/common';
 import { expect } from 'chai';
 import { Body, Query } from '../../decorators';
 import { RequestMethod } from '../../enums/request-method.enum';

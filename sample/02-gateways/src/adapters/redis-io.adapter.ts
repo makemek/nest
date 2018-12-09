@@ -1,4 +1,4 @@
-import { IoAdapter } from '@nestjs/websockets';
+import { IoAdapter } from '@nestjs-client/websockets';
 import * as redisIoAdapter from 'socket.io-redis';
 
 const redisAdapter = redisIoAdapter({ host: 'localhost', port: 6379 });

@@ -1,10 +1,10 @@
-import { HttpServer } from '@nestjs/common';
-import { RequestMethod } from '@nestjs/common/enums/request-method.enum';
-import { MiddlewareConfiguration, RouteInfo } from '@nestjs/common/interfaces/middleware/middleware-configuration.interface';
-import { NestMiddleware } from '@nestjs/common/interfaces/middleware/nest-middleware.interface';
-import { NestModule } from '@nestjs/common/interfaces/modules/nest-module.interface';
-import { Type } from '@nestjs/common/interfaces/type.interface';
-import { isUndefined, validatePath } from '@nestjs/common/utils/shared.utils';
+import { HttpServer } from '@nestjs-client/common';
+import { RequestMethod } from '@nestjs-client/common/enums/request-method.enum';
+import { MiddlewareConfiguration, RouteInfo } from '@nestjs-client/common/interfaces/middleware/middleware-configuration.interface';
+import { NestMiddleware } from '@nestjs-client/common/interfaces/middleware/nest-middleware.interface';
+import { NestModule } from '@nestjs-client/common/interfaces/modules/nest-module.interface';
+import { Type } from '@nestjs-client/common/interfaces/type.interface';
+import { isUndefined, validatePath } from '@nestjs-client/common/utils/shared.utils';
 import { ApplicationConfig } from '../application-config';
 import { InvalidMiddlewareException } from '../errors/exceptions/invalid-middleware.exception';
 import { RuntimeException } from '../errors/exceptions/runtime.exception';

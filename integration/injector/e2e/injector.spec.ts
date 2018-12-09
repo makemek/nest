@@ -1,6 +1,6 @@
-import { RuntimeException } from '@nestjs/core/errors/exceptions/runtime.exception';
-import { UnknownExportException } from '@nestjs/core/errors/exceptions/unknown-export.exception';
-import { Test } from '@nestjs/testing';
+import { RuntimeException } from '@nestjs-client/core/errors/exceptions/runtime.exception';
+import { UnknownExportException } from '@nestjs-client/core/errors/exceptions/unknown-export.exception';
+import { Test } from '@nestjs-client/testing';
 import { expect } from 'chai';
 import {
   DYNAMIC_TOKEN,

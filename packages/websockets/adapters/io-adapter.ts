@@ -1,6 +1,6 @@
-import { INestApplicationContext, WebSocketAdapter } from '@nestjs/common';
-import { isFunction, isNil } from '@nestjs/common/utils/shared.utils';
-import { NestApplication } from '@nestjs/core';
+import { INestApplicationContext, WebSocketAdapter } from '@nestjs-client/common';
+import { isFunction, isNil } from '@nestjs-client/common/utils/shared.utils';
+import { NestApplication } from '@nestjs-client/core';
 import { Server } from 'http';
 import { fromEvent, Observable } from 'rxjs';
 import { filter, first, map, mergeMap, share, takeUntil } from 'rxjs/operators';

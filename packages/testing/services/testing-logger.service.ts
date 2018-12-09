@@ -1,4 +1,4 @@
-import { Logger } from '@nestjs/common';
+import { Logger } from '@nestjs-client/common';
 
 export class TestingLogger extends Logger {
   constructor() {

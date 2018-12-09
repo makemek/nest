@@ -1,6 +1,6 @@
-import { Logger } from '@nestjs/common/services/logger.service';
-import { loadPackage } from '@nestjs/common/utils/load-package.util';
-import { isFunction, isString } from '@nestjs/common/utils/shared.utils';
+import { Logger } from '@nestjs-client/common/services/logger.service';
+import { loadPackage } from '@nestjs-client/common/utils/load-package.util';
+import { isFunction, isString } from '@nestjs-client/common/utils/shared.utils';
 import {
   EMPTY as empty,
   from as fromPromise,

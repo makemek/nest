@@ -1,4 +1,4 @@
-import { Controller } from '@nestjs/common/interfaces';
+import { Controller } from '@nestjs-client/common/interfaces';
 
 export abstract class ContextCreator {
   public abstract createConcreteContext<T extends any[], R extends any[]>(

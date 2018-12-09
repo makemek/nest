@@ -3,7 +3,7 @@ import {
   Controller,
   Get,
   UseInterceptors,
-} from '@nestjs/common';
+} from '@nestjs-client/common';
 import { RoleEntity } from './entities/role.entity';
 import { UserEntity } from './entities/user.entity';
 

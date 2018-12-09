@@ -1,4 +1,4 @@
-import { RuntimeException } from '@nestjs/core/errors/exceptions/runtime.exception';
+import { RuntimeException } from '@nestjs-client/core/errors/exceptions/runtime.exception';
 
 export class InvalidGrpcServiceException extends RuntimeException {
   constructor() {

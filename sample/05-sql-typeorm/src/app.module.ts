@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Module } from '@nestjs-client/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { PhotoModule } from './photo/photo.module';
 

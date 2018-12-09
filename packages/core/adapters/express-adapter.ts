@@ -1,7 +1,7 @@
-import { RequestMethod } from '@nestjs/common';
-import { HttpServer, RequestHandler } from '@nestjs/common/interfaces';
-import { ServeStaticOptions } from '@nestjs/common/interfaces/external/serve-static-options.interface';
-import { isNil, isObject } from '@nestjs/common/utils/shared.utils';
+import { RequestMethod } from '@nestjs-client/common';
+import { HttpServer, RequestHandler } from '@nestjs-client/common/interfaces';
+import { ServeStaticOptions } from '@nestjs-client/common/interfaces/external/serve-static-options.interface';
+import { isNil, isObject } from '@nestjs-client/common/utils/shared.utils';
 import { RouterMethodFactory } from '../helpers/router-method-factory';
 
 export class ExpressAdapter implements HttpServer {

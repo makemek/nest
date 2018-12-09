@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Module } from '@nestjs-client/common';
 import { ApplicationGateway } from './app.gateway';
 
 @Module({

@@ -1,6 +1,6 @@
-import { ArgumentsHost, Logger, RpcExceptionFilter } from '@nestjs/common';
-import { isObject } from '@nestjs/common/utils/shared.utils';
-import { MESSAGES } from '@nestjs/core/constants';
+import { ArgumentsHost, Logger, RpcExceptionFilter } from '@nestjs-client/common';
+import { isObject } from '@nestjs-client/common/utils/shared.utils';
+import { MESSAGES } from '@nestjs-client/core/constants';
 import { Observable, throwError as _throw } from 'rxjs';
 import { RpcException } from './rpc-exception';
 

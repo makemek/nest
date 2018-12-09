@@ -1,6 +1,6 @@
-import { RequestMethod } from '@nestjs/common';
-import { ErrorHandler, RequestHandler } from '@nestjs/common/interfaces';
-import { loadPackage } from '@nestjs/common/utils/load-package.util';
+import { RequestMethod } from '@nestjs-client/common';
+import { ErrorHandler, RequestHandler } from '@nestjs-client/common/interfaces';
+import { loadPackage } from '@nestjs-client/common/utils/load-package.util';
 import * as pathToRegexp from 'path-to-regexp';
 
 export class FastifyAdapter {

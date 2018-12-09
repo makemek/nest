@@ -3,21 +3,21 @@ import {
   INestApplication,
   INestMicroservice,
   Logger,
-} from '@nestjs/common';
-import { MicroserviceOptions } from '@nestjs/common/interfaces/microservices/microservice-configuration.interface';
-import { NestMicroserviceOptions } from '@nestjs/common/interfaces/microservices/nest-microservice-options.interface';
-import { NestApplicationContextOptions } from '@nestjs/common/interfaces/nest-application-context-options.interface';
-import { NestApplicationOptions } from '@nestjs/common/interfaces/nest-application-options.interface';
-import { INestExpressApplication } from '@nestjs/common/interfaces/nest-express-application.interface';
-import { INestFastifyApplication } from '@nestjs/common/interfaces/nest-fastify-application.interface';
-import { Type } from '@nestjs/common/interfaces/type.interface';
-import { loadPackage } from '@nestjs/common/utils/load-package.util';
-import { NestApplication, NestApplicationContext } from '@nestjs/core';
-import { ExpressAdapter } from '@nestjs/core/adapters/express-adapter';
-import { ExpressFactory } from '@nestjs/core/adapters/express-factory';
-import { FastifyAdapter } from '@nestjs/core/adapters/fastify-adapter';
-import { ApplicationConfig } from '@nestjs/core/application-config';
-import { NestContainer } from '@nestjs/core/injector/container';
+} from '@nestjs-client/common';
+import { MicroserviceOptions } from '@nestjs-client/common/interfaces/microservices/microservice-configuration.interface';
+import { NestMicroserviceOptions } from '@nestjs-client/common/interfaces/microservices/nest-microservice-options.interface';
+import { NestApplicationContextOptions } from '@nestjs-client/common/interfaces/nest-application-context-options.interface';
+import { NestApplicationOptions } from '@nestjs-client/common/interfaces/nest-application-options.interface';
+import { INestExpressApplication } from '@nestjs-client/common/interfaces/nest-express-application.interface';
+import { INestFastifyApplication } from '@nestjs-client/common/interfaces/nest-fastify-application.interface';
+import { Type } from '@nestjs-client/common/interfaces/type.interface';
+import { loadPackage } from '@nestjs-client/common/utils/load-package.util';
+import { NestApplication, NestApplicationContext } from '@nestjs-client/core';
+import { ExpressAdapter } from '@nestjs-client/core/adapters/express-adapter';
+import { ExpressFactory } from '@nestjs-client/core/adapters/express-factory';
+import { FastifyAdapter } from '@nestjs-client/core/adapters/fastify-adapter';
+import { ApplicationConfig } from '@nestjs-client/core/application-config';
+import { NestContainer } from '@nestjs-client/core/injector/container';
 
 export class TestingModule extends NestApplicationContext {
   constructor(
@@ -62,7 +62,7 @@ export class TestingModule extends NestApplicationContext {
     options: NestMicroserviceOptions & MicroserviceOptions,
   ): INestMicroservice {
     const { NestMicroservice } = loadPackage(
-      '@nestjs/microservices',
+      '@nestjs-client/microservices',
       'TestingModule',
     );
     this.applyLogger(options);

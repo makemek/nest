@@ -1,4 +1,4 @@
-import { ApplicationConfig } from '@nestjs/core/application-config';
+import { ApplicationConfig } from '@nestjs-client/core/application-config';
 import { expect } from 'chai';
 import { of } from 'rxjs';
 import * as sinon from 'sinon';

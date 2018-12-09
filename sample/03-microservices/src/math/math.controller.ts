@@ -1,10 +1,10 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get } from '@nestjs-client/common';
 import {
   ClientProxy,
   Client,
   Transport,
   MessagePattern,
-} from '@nestjs/microservices';
+} from '@nestjs-client/microservices';
 import { Observable } from 'rxjs';
 
 @Controller()

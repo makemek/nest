@@ -1,4 +1,4 @@
-import { ParseIntPipe, UseGuards } from '@nestjs/common';
+import { ParseIntPipe, UseGuards } from '@nestjs-client/common';
 import { Args, Mutation, Query, Resolver, Subscription } from '@nestjs/graphql';
 import { PubSub } from 'graphql-subscriptions';
 import { Cat } from '../graphql.schema';

@@ -5,12 +5,12 @@ import {
   NestInterceptor,
   PipeTransform,
   WebSocketAdapter,
-} from '@nestjs/common';
-import { Logger } from '@nestjs/common/services/logger.service';
-import { ApplicationConfig } from '@nestjs/core/application-config';
-import { MESSAGES } from '@nestjs/core/constants';
-import { NestContainer } from '@nestjs/core/injector/container';
-import { NestApplicationContext } from '@nestjs/core/nest-application-context';
+} from '@nestjs-client/common';
+import { Logger } from '@nestjs-client/common/services/logger.service';
+import { ApplicationConfig } from '@nestjs-client/core/application-config';
+import { MESSAGES } from '@nestjs-client/core/constants';
+import { NestContainer } from '@nestjs-client/core/injector/container';
+import { NestApplicationContext } from '@nestjs-client/core/nest-application-context';
 import * as optional from 'optional';
 import { Transport } from './enums/transport.enum';
 import { CustomTransportStrategy } from './interfaces/custom-transport-strategy.interface';
@@ -20,9 +20,9 @@ import { Server } from './server/server';
 import { ServerFactory } from './server/server-factory';
 
 const { SocketModule } =
-  optional('@nestjs/websockets/socket-module') || ({} as any);
+  optional('@nestjs-client/websockets/socket-module') || ({} as any);
 const { IoAdapter } =
-  optional('@nestjs/websockets/adapters/io-adapter') || ({} as any);
+  optional('@nestjs-client/websockets/adapters/io-adapter') || ({} as any);
 
 export class NestMicroservice extends NestApplicationContext
   implements INestMicroservice {

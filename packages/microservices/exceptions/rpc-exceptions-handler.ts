@@ -1,7 +1,7 @@
-import { RpcExceptionFilterMetadata } from '@nestjs/common/interfaces/exceptions';
-import { ArgumentsHost } from '@nestjs/common/interfaces/features/arguments-host.interface';
-import { isEmpty } from '@nestjs/common/utils/shared.utils';
-import { InvalidExceptionFilterException } from '@nestjs/core/errors/exceptions/invalid-exception-filter.exception';
+import { RpcExceptionFilterMetadata } from '@nestjs-client/common/interfaces/exceptions';
+import { ArgumentsHost } from '@nestjs-client/common/interfaces/features/arguments-host.interface';
+import { isEmpty } from '@nestjs-client/common/utils/shared.utils';
+import { InvalidExceptionFilterException } from '@nestjs-client/core/errors/exceptions/invalid-exception-filter.exception';
 import { Observable } from 'rxjs';
 import { BaseRpcExceptionFilter } from './base-rpc-exception-filter';
 import { RpcException } from './rpc-exception';

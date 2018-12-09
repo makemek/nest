@@ -1,10 +1,10 @@
-import { CUSTOM_ROUTE_AGRS_METADATA } from '@nestjs/common/constants';
+import { CUSTOM_ROUTE_AGRS_METADATA } from '@nestjs-client/common/constants';
 import {
   Body,
   createRouteParamDecorator,
   Request,
-} from '@nestjs/common/decorators';
-import { RouteParamtypes } from '@nestjs/common/enums/route-paramtypes.enum';
+} from '@nestjs-client/common/decorators';
+import { RouteParamtypes } from '@nestjs-client/common/enums/route-paramtypes.enum';
 import { expect } from 'chai';
 import { ROUTE_ARGS_METADATA } from '../../../common/constants';
 import { ContextUtils } from '../../helpers/context-utils';
