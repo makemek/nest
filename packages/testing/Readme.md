@@ -25,6 +25,7 @@
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Description
+Running nestjs on client side
 
 <p>Nest is a framework for building efficient, scalable <a href="http://nodejs.org" target="_blank">Node.js</a> server-side applications. It uses modern JavaScript, is built with  <a href="http://www.typescriptlang.org" target="_blank">TypeScript</a> (preserves compatibility with pure JavaScript) and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).</p>
 
@@ -50,7 +51,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 #### Gold Sponsors
 
-<a href="http://xtremis.com/"><img src="https://nestjs.com/img/logo-xtremis.svg" width="220" /></a> 
+<a href="http://xtremis.com/"><img src="https://nestjs.com/img/logo-xtremis.svg" width="220" /></a>
 
 #### Silver Sponsors
 <a href="https://neoteric.eu/"><img src="https://nestjs.com/img/neoteric-cut.png" width="120" /></a> &nbsp;
