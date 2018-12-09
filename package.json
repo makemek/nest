@@ -1,6 +1,6 @@
 {
   "name": "nestjs-client",
-  "version": "5.4.8",
+  "version": "5.4.10",
   "description": "Modern, fast, powerful node.js web framework",
   "scripts": {
     "coverage": "nyc report --reporter=text-lcov | coveralls",
