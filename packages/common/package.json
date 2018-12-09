@@ -1,5 +1,5 @@
 {
-  "name": "@nestjs/common",
+  "name": "@nestjs-client/common",
   "version": "5.4.1",
   "description": "Nest - modern, fast, powerful node.js web framework (@common)",
   "author": "Kamil Mysliwiec",

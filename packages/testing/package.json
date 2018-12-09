@@ -1,5 +1,5 @@
 {
-  "name": "@nestjs/testing",
+  "name": "@nestjs-client/testing",
   "version": "5.4.1",
   "description": "Nest - modern, fast, powerful node.js web framework (@testing)",
   "author": "Kamil Mysliwiec",

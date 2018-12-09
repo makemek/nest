@@ -1,5 +1,5 @@
 {
-  "name": "@nestjs/microservices",
+  "name": "@nestjs-client/microservices",
   "version": "5.4.1",
   "description": "Nest - modern, fast, powerful node.js web framework (@microservices)",
   "author": "Kamil Mysliwiec",
