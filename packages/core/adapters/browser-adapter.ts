@@ -20,44 +20,44 @@ export class BrowserAdapter implements HttpServer {
 
   get(handler: RequestHandler);
   get(path: any, handler: RequestHandler);
-  get(path, ...args: any[]) {
-    return this._router.get(path.substring(1), ...args);
+  get(...args: any[]) {
+    return this._router.get(...args);
   }
 
   post(handler: RequestHandler);
   post(path: any, handler: RequestHandler);
-  post(path, ...args: any[]) {
-    return this._router.post(path.substring(1), ...args);
+  post(...args: any[]) {
+    return this._router.post(...args);
   }
 
   head(handler: RequestHandler);
   head(path: any, handler: RequestHandler);
-  head(path, ...args: any[]) {
-    return this._router.head(path.substring(1), ...args);
+  head(...args: any[]) {
+    return this._router.head(...args);
   }
 
   delete(handler: RequestHandler);
   delete(path: any, handler: RequestHandler);
-  delete(path, ...args: any[]) {
-    return this._router.delete(path.substring(1), ...args);
+  delete(...args: any[]) {
+    return this._router.delete(...args);
   }
 
   put(handler: RequestHandler);
   put(path: any, handler: RequestHandler);
-  put(path, ...args: any[]) {
-    return this._router.put(path.substring(1), ...args);
+  put(...args: any[]) {
+    return this._router.put(...args);
   }
 
   patch(handler: RequestHandler);
   patch(path: any, handler: RequestHandler);
-  patch(path, ...args: any[]) {
-    return this._router.patch(path.substring(1), ...args);
+  patch(...args: any[]) {
+    return this._router.patch(...args);
   }
 
   options(handler: RequestHandler);
   options(path: any, handler: RequestHandler);
-  options(path, ...args: any[]) {
-    return this._router.options(path.substring(1), ...args);
+  options(...args: any[]) {
+    return this._router.options(...args);
   }
 
   listen(port: string | number, callback?: () => void);
