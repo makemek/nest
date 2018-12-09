@@ -1,6 +1,6 @@
 {
   "name": "@nestjs-client/websockets",
-  "version": "5.4.9",
+  "version": "5.4.10",
   "description": "Nest - modern, fast, powerful node.js web framework (@websockets)",
   "author": "Kamil Mysliwiec",
   "license": "MIT",
