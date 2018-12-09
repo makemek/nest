@@ -13,9 +13,7 @@ import { INestFastifyApplication } from '@nestjs/common/interfaces/nest-fastify-
 import { Logger } from '@nestjs/common/services/logger.service';
 import { loadPackage } from '@nestjs/common/utils/load-package.util';
 import { isFunction, isNil } from '@nestjs/common/utils/shared.utils';
-import { ExpressAdapter } from './adapters/express-adapter';
-import { ExpressFactory } from './adapters/express-factory';
-import { FastifyAdapter } from './adapters/fastify-adapter';
+import { BrowserAdapter } from './adapters/browser-adapter';
 import { ApplicationConfig } from './application-config';
 import { MESSAGES } from './constants';
 import { ExceptionsZone } from './errors/exceptions-zone';
@@ -38,11 +36,6 @@ export class NestFactoryStatic {
   ): Promise<INestApplication & INestExpressApplication>;
   public async create(
     module: any,
-    httpServer: FastifyAdapter,
-    options?: NestApplicationOptions,
-  ): Promise<INestApplication & INestFastifyApplication>;
-  public async create(
-    module: any,
     httpServer: HttpServer | any,
     options?: NestApplicationOptions,
   ): Promise<INestApplication & INestExpressApplication>;
@@ -57,11 +50,10 @@ export class NestFactoryStatic {
     // tslint:disable-next-line:prefer-const
     let [httpServer, appOptions] = isHttpServer
       ? [serverOrOptions, options]
-      : [ExpressFactory.create(), serverOrOptions];
+      : [new BrowserAdapter(), serverOrOptions];
 
     const applicationConfig = new ApplicationConfig();
     const container = new NestContainer(applicationConfig);
-    httpServer = this.applyExpressAdapter(httpServer);
 
     this.applyLogger(appOptions);
     await this.initialize(module, container, applicationConfig, httpServer);
@@ -145,7 +137,7 @@ export class NestFactoryStatic {
         dependenciesScanner.applyApplicationProviders();
       });
     } catch (e) {
-      process.abort();
+      console.error(e);
     }
   }
 
@@ -179,14 +171,6 @@ export class NestFactoryStatic {
       return;
     }
     !isNil(options.logger) && Logger.overrideLogger(options.logger);
-  }
-
-  private applyExpressAdapter(httpAdapter: HttpServer): HttpServer {
-    const isAdapter = httpAdapter.getHttpServer;
-    if (isAdapter) {
-      return httpAdapter;
-    }
-    return new ExpressAdapter(httpAdapter);
   }
 }
 

@@ -7,7 +7,23 @@ export class FastifyAdapter {
   protected readonly instance: any;
 
   constructor(options?: any) {
-    this.instance = loadPackage('fastify', 'FastifyAdapter')(options);
+    const noop = () => {}
+    this.instance = {
+      use: noop,
+      get: noop,
+      post: noop,
+      head: noop,
+      delete: noop,
+      put: noop,
+      patch: noop,
+      options: noop,
+      listen: noop,
+      close: noop,
+      set: noop,
+      enable: noop,
+      disable: noop,
+      engine: noop,
+    }
   }
 
   use(handler: RequestHandler | ErrorHandler);
